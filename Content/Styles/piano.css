@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Silk;
+    src: url(../fonts/Silk.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+#container {
+  width: 1330px;
+  height: 450px;
+  
+  position: absolute;   
+  top: 50%;
+  left: 50%; 
+ 
+  background: url(../imgs/piano.png);
+  background-size: cover;  
+
+  padding: 0;
+  margin: auto;  
+
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  height:100px;
+  width: 150px;  
+
+  position: relative;
+  top: 20px;
+  left: 30px;  
+
+  background: url(../imgs/logo.png);  
+  background-size: 100%;
+}
+
+#logo:hover {
+  background: url(../imgs/logo_selected.png);  
+  background-size: cover;
+}
+
+.white_key_title {
+  height: 20px;
+  width: 25px;  
+
+  color: transparent;  
+  font-family: Silk;  
+  font-size: 8px;
+  text-align: center;   
+
+  position: absolute;
+  z-index: 1;  
+  top: -16px;
+
+  cursor: pointer; 
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;  
+}
+
+.black_key_title {
+  height: 38px;  
+  width: 100px;
+
+  color: transparent;    
+  font-family: Silk;
+  font-size: 8px;  
+  text-align: left;
+
+  position: absolute;  
+  z-index: 1;  
+  top: -26px;
+
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;  
+}
+
+.white_key {
+  height:250px;
+  width: 25px;
+
+  position:absolute;   
+  top: 170px;
+  left: 0;
+
+  background: url(../imgs/white_key.png);
+  background-size: cover;
+
+  border-radius: 5px;
+  border:1px solid black;
+}
+.black_key {
+  height: 150px;
+  width: 18px;
+
+  position:absolute;     
+  top: 170px;
+  left: 0;
+
+  z-index: 1;
+
+  background: url(../imgs/black_key.png);
+  background-size: cover;  
+
+  border-radius: 3px;  
+  border:1px solid black;
+}
+
+#wave {
+  margin-top: -45px;
+  position: absolute;
+}
+#i1, #i2, #i3, #i4 {
+  height: 2px;
+  width: 16px;  
+
+  display: block;
+
+  margin: 2px;
+}
+@keyframes waves {
+      0%{ height: 2px; transform: translate(0,0); }
+      50%{ height: 3px; transform: translate(0px,0px); background: rgba(0, 0, 0,.7); }
+      100%{ height: 2px; transform: translate(0,0); }
+}
+
+.whiteKeyboardKey {
+  height: 23px;
+  width: 23px;  
+
+  position: relative;
+  z-index: 1;  
+  top: 180px;
+
+  color: rgb(64, 64, 64);
+  font-family: Silk;  
+  font-size: 16px;
+  font-variant: small-caps;   
+
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(153, 153, 153);  
+  vertical-align:  middle; 
+
+  background: url(../imgs/key.png);
+  background-size: cover;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;  
+}
+
+.blackKeyboardKey {
+  width: 12px;
+  height: 60px;
+
+  position: relative;  
+  z-index: 1;  
+  top: 40px;
+
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;  
+  vertical-align:  middle;
+
+  color: white;  
+  font-family: Silk;
+  font-size: 13px;
+  font-weight: bold;
+  font-variant: small-caps;
+
+  background: url(../imgs/blackKey.png);
+  background-size: cover;
+
+  margin-left: 2px;
+  word-wrap: break-word;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;  
+}
+
+.keyAssist {
+  width: 200px;
+  height: 80px;
+
+  position: relative;   
+  top: -65px;
+  left: 1100px;
+
+  color:white;
+  font-family: Silk; 
+  font-size:11px;
+  line-height: 35px;
+
+  background: url(../imgs/key_assist.png);
+  background-size: cover;  
+
+  border-radius: 10px;
+  border: 2px solid grey;
+  margin-top:10px;
+}
+.keyAssist:hover {
+  box-shadow: inset 0 0 10px #000000;
+}
+.keyAssist label {
+  margin-left: 3px;
+}

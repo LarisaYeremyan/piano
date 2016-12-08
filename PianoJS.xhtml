@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Piano</title>
+		<meta charset="utf-8" />     
+        <link rel="icon" href="Content/imgs/piano.ico" type="image/png"></link>		
+
+        <script src="scripts/piano.js"></script>
+		<script type="text/javascript" src="Scripts/data.js"></script>
+        <script type="text/javascript" src="Scripts/demo.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.user.defined.js"></script>
+
+        <style>
+            @import url(content/styles/piano.css);
+        </style>
+        <base target="_blank"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="logo" onclick="playMusic();"></div>  
+
+            <div class = "keyAssist">
+              <label><input type="radio" name="assist" value="KeyOn" onclick="handleClickOn();" checked = ""></input> Key Assist On</label><br></br>
+              <label><input type="radio" name="assist" value="KeyOff" onclick="handleClickOff();" checked = "checked"></input> Key Assist Off</label>           
+            </div>  
+
+            <div id = "wave">
+                <i id="i1"></i>
+                <i id="i2"></i>
+                <i id="i3"></i>
+                <i id="i4"></i>
+            </div>          
+        </div>
+    </body>
+</html>
+
